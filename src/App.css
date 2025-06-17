@@ -1,0 +1,56 @@
+.custom-footer {
+  background-color: #111827;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #4f46e5;
+}
+
+.footer-location {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+/* ========== Responsive Styles ========== */
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-item {
+    justify-content: center;
+  }
+}

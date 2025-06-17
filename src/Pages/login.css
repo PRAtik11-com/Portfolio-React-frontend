@@ -1,0 +1,167 @@
+/* Full-page styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  /* Login Form Styling */
+  .login-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    z-index: 999;
+  }
+  
+  /* Heading */
+  h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Input Group */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover and Focus Effects */
+  .input-field:focus,
+  .input-field:hover {
+    background-color: #444;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: #2575fc;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 12px;
+  }
+  
+  /* Hover Effect for Button */
+  .submit-btn:hover {
+    background-color: #6a11cb;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Click Effect */
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+  
+  /* Animated Waves */
+  @keyframes waveAnimation {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
+  
+  .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/sea.jpg');
+    background-size: contain;
+    opacity: 0.6;
+    animation: waveAnimation 10s linear infinite alternate;
+  }
+  
+  /* Fish Animation */
+  @keyframes fishSwim {
+    0% {
+      transform: translateX(-100px) translateY(0);
+    }
+    50% {
+      transform: translateX(100vw) translateY(20px);
+    }
+    100% {
+      transform: translateX(-100px) translateY(-20px);
+    }
+  }
+  
+  .fish {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    animation: fishSwim 8s linear infinite;
+  }
+  
+  /* Positioning different fish */
+  .fish-1 {
+    top: 40%;
+    left: -100px;
+    animation-duration: 12s;
+  }
+  
+  .fish-2 {
+    top: 60%;
+    left: -100px;
+    animation-duration: 15s;
+  }
+  
+  .fish-3 {
+    top: 20%;
+    left: -100px;
+    animation-duration: 10s;
+  }
+  
+  
